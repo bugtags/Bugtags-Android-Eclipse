@@ -25,6 +25,7 @@
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
+        <!-- bugtags start:required -->
         <activity
             android:name="com.bugtags.library.BugTagsActivity"
             android:configChanges="keyboardHidden|orientation|screenSize"
@@ -38,23 +39,8 @@
 
         <service android:name="com.bugtags.library.BugTagsService" />
 
-        <!-- bugtags start:required -->
-        <!--
-        <activity
-            android:name="com.bugtags.library.BugTagsActivity"
-            android:configChanges="keyboardHidden|orientation|screenSize"
-            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"/>
-
-        <service android:name="com.bugtags.library.BugTagsService"/>
-
-        <receiver android:name="com.bugtags.library.BugTagsReceiver">
-            <intent-filter>
-                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
-            </intent-filter>
-        </receiver>
-        -->
         <!-- bugtags end -->
-
+       
         <activity
             android:name="com.bugtags.demo.MainActivity"
             android:configChanges="keyboardHidden|orientation|screenSize"
