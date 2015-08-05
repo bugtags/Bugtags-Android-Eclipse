@@ -27,17 +27,17 @@
         android:theme="@style/AppTheme" >
         <!-- bugtags start:required -->
         <activity
-            android:name="com.bugtags.library.BugTagsActivity"
+            android:name="com.bugtags.library.BugtagsActivity"
             android:configChanges="keyboardHidden|orientation|screenSize"
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
 
-        <receiver android:name="com.bugtags.library.BugTagsReceiver" >
+        <receiver android:name="com.bugtags.library.BugtagsReceiver" >
             <intent-filter>
                 <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
             </intent-filter>
         </receiver>
 
-        <service android:name="com.bugtags.library.BugTagsService" />
+        <service android:name="com.bugtags.library.BugtagsService" />
 
         <!-- bugtags end -->
        
