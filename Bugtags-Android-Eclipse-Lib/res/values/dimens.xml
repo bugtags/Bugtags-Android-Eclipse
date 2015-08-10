@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-     <!--global-->
+    <!--global-->
     <dimen name="btg_global_margin_tiny">5dp</dimen>
     <dimen name="btg_global_margin_standard">10dp</dimen>
     <dimen name="btg_global_margin_large">15dp</dimen>

@@ -27,7 +27,6 @@
             android:background="@drawable/btg_line_horizontal"/>
 
         <EditText
-            android:singleLine="true"
             android:id="@+id/usernameText"
             android:layout_width="match_parent"
             android:layout_height="@dimen/btg_login_text_height"
@@ -37,6 +36,8 @@
             android:drawableLeft="@drawable/btg_icon_account"
             android:drawablePadding="@dimen/btg_global_margin_standard"
             android:hint="@string/btg_login_username"
+            android:nextFocusForward="@+id/passwordText"
+            android:singleLine="true"
             android:textSize="@dimen/btg_global_font_big"/>
 
         <ImageView
@@ -46,7 +47,6 @@
             android:background="@drawable/btg_line_horizontal"/>
 
         <EditText
-            android:singleLine="true"
             android:id="@+id/passwordText"
             android:layout_width="match_parent"
             android:layout_height="@dimen/btg_login_text_height"
@@ -57,6 +57,8 @@
             android:drawablePadding="@dimen/btg_global_margin_standard"
             android:hint="@string/btg_login_password"
             android:inputType="textPassword"
+            android:nextFocusForward="@+id/finishButton"
+            android:singleLine="true"
             android:textSize="@dimen/btg_global_font_big"/>
 
         <ImageView
@@ -66,10 +68,10 @@
             android:background="@drawable/btg_line_horizontal"/>
 
         <RelativeLayout
-            android:visibility="gone"
             android:id="@+id/captchaView"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:visibility="gone">
 
             <ImageView
                 android:id="@+id/captchaImage"
@@ -106,10 +108,10 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/btg_global_margin_tiny"
             android:layout_marginLeft="@dimen/btg_global_margin_standard"
             android:layout_marginRight="@dimen/btg_global_margin_standard"
             android:layout_marginTop="@dimen/btg_global_margin_tiny"
-            android:layout_marginBottom="@dimen/btg_global_margin_tiny"
             android:orientation="horizontal">
 
             <Button

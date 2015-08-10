@@ -34,25 +34,25 @@
     <string name="btg_tag_num_max">最多添加3个标签</string>
 
     <!--login-->
-    <string name="btg_login_username">账号</string>
-    <string name="btg_login_username_empty">账号不能为空</string>
+    <string name="btg_login_username">帐号</string>
+    <string name="btg_login_username_empty">帐号不能为空</string>
     <string name="btg_login_password">密码</string>
     <string name="btg_login_password_empty">密码不能为空</string>
     <string name="btg_login_do">登录</string>
-    <string name="btg_login_progress">正在登陆&#8203;</string>
-    <string name="btg_login_failed">登陆失败，请重试</string>
+    <string name="btg_login_progress">正在登录&#8203;</string>
+    <string name="btg_login_failed">登录失败，请重试</string>
 
     <!--logout-->
     <string name="btg_logout_title">选择操作</string>
     <string name="btg_logout_my_issue">我的问题</string>
-    <string name="btg_logout_do">退出登陆</string>
+    <string name="btg_logout_do">退出登录</string>
     <string name="btg_logout_confirm">确定退出吗？</string>
-    <string name="btg_login_succeed">登陆成功！</string>
+    <string name="btg_login_succeed">登录成功！</string>
     <string name="btg_login_captcha">验证码</string>
     <string name="btg_login_captcha_needed">验证码不能为空</string>
-    <string name="btg_guide_sub_2">单击改变方向</string>
-    <string name="btg_guide_sub_3">长按编辑或删除标签</string>
-    <string name="btg_guide_sub_1">单击选择标签位置</string>
+    <string name="btg_guide_sub_3">长按标签可编辑或删除</string>
+    <string name="btg_guide_sub_2">单击标签改变方向</string>
+    <string name="btg_guide_sub_1">单击屏幕选择标签位置</string>
     <string name="btg_guide_sub_0">标签要这么玩</string>
     <string name="btg_global_got_it">知道了！</string>
 

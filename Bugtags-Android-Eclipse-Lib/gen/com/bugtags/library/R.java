@@ -325,6 +325,24 @@ containing a value of this type.
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
         public static int borderlessButtonStyle=0x7f010037;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static int btg_dividerWidth=0x7f0100cb;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static int btg_rv_background=0x7f0100c9;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static int btg_rv_foreground=0x7f0100ca;
         /**  Style for buttons within button bars 
          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
@@ -627,16 +645,6 @@ containing a value of this type.
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
         public static int dividerVertical=0x7f010038;
-        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
-Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
-in (inches), mm (millimeters).
-<p>This may also be a reference to a resource (in the form
-"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
-theme attribute (in the form
-"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
-containing a value of this type.
-         */
-        public static int dividerWidth=0x7f0100cb;
         /**  The total size of the drawable 
          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
@@ -1082,14 +1090,6 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
         public static int ratingBarStyle=0x7f010069;
-        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
-or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-         */
-        public static int rv_background=0x7f0100c9;
-        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
-or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-         */
-        public static int rv_foreground=0x7f0100ca;
         /**  Search icon displayed as a text field hint 
          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
@@ -2096,11 +2096,11 @@ containing a value of this type.
         public static int bottomView=0x7f090060;
         public static int btgFloatingButton=0x7f090067;
         public static int buttonPanel=0x7f090036;
-        public static int cancelButton=0x7f090056;
+        public static int cancelButton=0x7f090057;
         public static int cancel_action=0x7f090076;
-        public static int captchaImage=0x7f090054;
-        public static int captchaText=0x7f090055;
-        public static int captchaView=0x7f090053;
+        public static int captchaImage=0x7f090055;
+        public static int captchaText=0x7f090056;
+        public static int captchaView=0x7f090054;
         public static int capturedImage=0x7f090059;
         public static int checkbox=0x7f090038;
         public static int checkedImage=0x7f09006a;
@@ -2123,7 +2123,7 @@ containing a value of this type.
         public static int expand_activities_button=0x7f090027;
         public static int expanded_menu=0x7f090037;
         public static int fabButton=0x7f090068;
-        public static int finishButton=0x7f090057;
+        public static int finishButton=0x7f090053;
         public static int home=0x7f090000;
         public static int homeAsUp=0x7f09000e;
         public static int icon=0x7f09002b;
@@ -2346,44 +2346,50 @@ containing a value of this type.
         /**  Content description for the Toolbar icon used to collapse an expanded action mode. [CHAR LIMIT=NONE] 
          */
         public static int abc_toolbar_collapse_description=0x7f0a0004;
-        public static int app_name=0x7f0a0012;
         /** global
 global
+global
          */
-        public static int btg_global_cancel=0x7f0a0013;
-        public static int btg_global_close=0x7f0a0015;
-        public static int btg_global_confirm=0x7f0a0014;
-        public static int btg_global_got_it=0x7f0a0031;
-        public static int btg_guide_sub_0=0x7f0a0030;
-        public static int btg_guide_sub_1=0x7f0a002f;
-        public static int btg_guide_sub_2=0x7f0a002d;
-        public static int btg_guide_sub_3=0x7f0a002e;
-        public static int btg_login_captcha=0x7f0a002b;
-        public static int btg_login_captcha_needed=0x7f0a002c;
-        public static int btg_login_do=0x7f0a0023;
-        public static int btg_login_failed=0x7f0a0025;
+        public static int btg_global_cancel=0x7f0a0012;
+        public static int btg_global_close=0x7f0a0014;
+        public static int btg_global_confirm=0x7f0a0013;
+        public static int btg_global_got_it=0x7f0a0015;
+        /** guide
+         */
+        public static int btg_guide_sub_0=0x7f0a002d;
+        public static int btg_guide_sub_1=0x7f0a002e;
+        public static int btg_guide_sub_2=0x7f0a002f;
+        public static int btg_guide_sub_3=0x7f0a0030;
+        public static int btg_login_captcha=0x7f0a0023;
+        public static int btg_login_captcha_needed=0x7f0a0024;
+        public static int btg_login_do=0x7f0a0025;
+        public static int btg_login_failed=0x7f0a0027;
         public static int btg_login_password=0x7f0a0021;
         public static int btg_login_password_empty=0x7f0a0022;
-        public static int btg_login_progress=0x7f0a0024;
-        public static int btg_login_succeed=0x7f0a002a;
+        public static int btg_login_progress=0x7f0a0026;
+        public static int btg_login_succeed=0x7f0a0028;
         /** login
+login
 login
          */
         public static int btg_login_username=0x7f0a001f;
         public static int btg_login_username_empty=0x7f0a0020;
-        public static int btg_logout_confirm=0x7f0a0029;
-        public static int btg_logout_do=0x7f0a0028;
-        public static int btg_logout_my_issue=0x7f0a0027;
+        public static int btg_logout_confirm=0x7f0a002c;
+        public static int btg_logout_do=0x7f0a002b;
+        public static int btg_logout_my_issue=0x7f0a002a;
         /** logout
 logout
+logout
          */
-        public static int btg_logout_title=0x7f0a0026;
+        public static int btg_logout_title=0x7f0a0029;
         /** tag
+tag
 tag
          */
         public static int btg_report_discard_alert=0x7f0a0019;
         public static int btg_report_tag_bug=0x7f0a0018;
         /** report
+report
 report
          */
         public static int btg_report_tag_hint=0x7f0a0016;
@@ -2407,31 +2413,13 @@ report
         public static int Animation_AppCompat_Dialog=0x7f0b0046;
         public static int Animation_AppCompat_DropDownUp=0x7f0b0047;
         /** 
-        Base application theme, dependent on API level. This theme is replaced
-        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
-    
-
-            Theme customizations available in newer API levels can go in
-            res/values-vXX/styles.xml, while customizations related to
-            backward-compatibility can go here.
-        
-
-        Base application theme for API 11+. This theme completely replaces
-        AppBaseTheme from res/values/styles.xml on API 11+ devices.
-    
- API 11 theme customizations can go here. 
-
         Base application theme for API 14+. This theme completely replaces
         AppBaseTheme from BOTH res/values/styles.xml and
         res/values-v11/styles.xml on API 14+ devices.
     
  API 14 theme customizations can go here. 
          */
-        public static int AppBaseTheme=0x7f0b0124;
-        /**  Application theme. 
- All customizations that are NOT specific to a particular API-level can go here. 
-         */
-        public static int AppTheme=0x7f0b0125;
+        public static int AppBaseTheme=0x7f0b012a;
         public static int Base_AlertDialog_AppCompat=0x7f0b00c4;
         public static int Base_AlertDialog_AppCompat_Light=0x7f0b00c5;
         public static int Base_Animation_AppCompat_Dialog=0x7f0b00c0;
@@ -2609,7 +2597,7 @@ report
     
          */
         public static int Base_Widget_AppCompat_Toolbar_Button_Navigation=0x7f0b00a9;
-        public static int BtgAlertDialog=0x7f0b0126;
+        public static int BtgAlertDialog=0x7f0b0124;
         public static int Platform_AppCompat=0x7f0b00ff;
         public static int Platform_AppCompat_Light=0x7f0b0100;
         public static int Platform_ThemeOverlay_AppCompat_Dark=0x7f0b0114;
@@ -2821,11 +2809,11 @@ report
          */
         public static int Widget_AppCompat_Toolbar=0x7f0b0042;
         public static int Widget_AppCompat_Toolbar_Button_Navigation=0x7f0b0043;
-        public static int btg_global_text_btn_negative=0x7f0b0128;
-        public static int btg_global_text_btn_positive=0x7f0b0129;
-        public static int btg_global_text_content=0x7f0b0127;
-        public static int btg_global_text_gray=0x7f0b012a;
-        public static int btg_tag_priority_text_light_content=0x7f0b012b;
+        public static int btg_global_text_btn_negative=0x7f0b0126;
+        public static int btg_global_text_btn_positive=0x7f0b0127;
+        public static int btg_global_text_content=0x7f0b0125;
+        public static int btg_global_text_gray=0x7f0b0128;
+        public static int btg_tag_priority_text_light_content=0x7f0b0129;
     }
     public static final class styleable {
         /**  ============================================ 
@@ -3640,12 +3628,12 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <tr><td><code>{@link #BtgHorizontalListView_android_divider android:divider}</code></td><td></td></tr>
            <tr><td><code>{@link #BtgHorizontalListView_android_fadingEdgeLength android:fadingEdgeLength}</code></td><td></td></tr>
            <tr><td><code>{@link #BtgHorizontalListView_android_requiresFadingEdge android:requiresFadingEdge}</code></td><td></td></tr>
-           <tr><td><code>{@link #BtgHorizontalListView_dividerWidth com.bugtags.library:dividerWidth}</code></td><td></td></tr>
+           <tr><td><code>{@link #BtgHorizontalListView_btg_dividerWidth com.bugtags.library:btg_dividerWidth}</code></td><td></td></tr>
            </table>
            @see #BtgHorizontalListView_android_divider
            @see #BtgHorizontalListView_android_fadingEdgeLength
            @see #BtgHorizontalListView_android_requiresFadingEdge
-           @see #BtgHorizontalListView_dividerWidth
+           @see #BtgHorizontalListView_btg_dividerWidth
          */
         public static final int[] BtgHorizontalListView = {
             0x010100e0, 0x01010129, 0x010103a5, 0x7f0100cb
@@ -3669,7 +3657,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static int BtgHorizontalListView_android_requiresFadingEdge = 2;
         /**
-          <p>This symbol is the offset where the {@link com.bugtags.library.R.attr#dividerWidth}
+          <p>This symbol is the offset where the {@link com.bugtags.library.R.attr#btg_dividerWidth}
           attribute's value can be found in the {@link #BtgHorizontalListView} array.
 
 
@@ -3681,44 +3669,44 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.bugtags.library:dividerWidth
+          @attr name com.bugtags.library:btg_dividerWidth
         */
-        public static int BtgHorizontalListView_dividerWidth = 3;
+        public static int BtgHorizontalListView_btg_dividerWidth = 3;
         /** Attributes that can be used with a BtgRippleView.
            <p>Includes the following attributes:</p>
            <table>
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #BtgRippleView_rv_background com.bugtags.library:rv_background}</code></td><td></td></tr>
-           <tr><td><code>{@link #BtgRippleView_rv_foreground com.bugtags.library:rv_foreground}</code></td><td></td></tr>
+           <tr><td><code>{@link #BtgRippleView_btg_rv_background com.bugtags.library:btg_rv_background}</code></td><td></td></tr>
+           <tr><td><code>{@link #BtgRippleView_btg_rv_foreground com.bugtags.library:btg_rv_foreground}</code></td><td></td></tr>
            </table>
-           @see #BtgRippleView_rv_background
-           @see #BtgRippleView_rv_foreground
+           @see #BtgRippleView_btg_rv_background
+           @see #BtgRippleView_btg_rv_foreground
          */
         public static final int[] BtgRippleView = {
             0x7f0100c9, 0x7f0100ca
         };
         /**
-          <p>This symbol is the offset where the {@link com.bugtags.library.R.attr#rv_background}
+          <p>This symbol is the offset where the {@link com.bugtags.library.R.attr#btg_rv_background}
           attribute's value can be found in the {@link #BtgRippleView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.bugtags.library:rv_background
+          @attr name com.bugtags.library:btg_rv_background
         */
-        public static int BtgRippleView_rv_background = 0;
+        public static int BtgRippleView_btg_rv_background = 0;
         /**
-          <p>This symbol is the offset where the {@link com.bugtags.library.R.attr#rv_foreground}
+          <p>This symbol is the offset where the {@link com.bugtags.library.R.attr#btg_rv_foreground}
           attribute's value can be found in the {@link #BtgRippleView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.bugtags.library:rv_foreground
+          @attr name com.bugtags.library:btg_rv_foreground
         */
-        public static int BtgRippleView_rv_foreground = 1;
+        public static int BtgRippleView_btg_rv_foreground = 1;
         /** Attributes that can be used with a DrawerArrowToggle.
            <p>Includes the following attributes:</p>
            <table>

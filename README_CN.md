@@ -1,18 +1,18 @@
 Bugtags Android SDK for Eclipse
 ===================
-###中文文档请移步[README_CN](README_CN.md)
-###QQ tribe for help: 479166560
-> If you are using Android Studio for Android development, please visit: [Bugtags-Android].
+> 如果你使用Android Studio来开发Android App, 请访问: [Bugtags-Android].
 
-> For more information, please visit: [Bugtags-Android]
+> 要获取更多信息，请访问: [Bugtags-Android]。
 
-1. Clone this project to your disk and add it to your workspace then add it as a dependency in your application's project. The eclipse project requires the following library dependencies:
+# 安装集成:
+
+1. 克隆本项目到本地，并添加到你的工作空间，然后将其添加为你的应用程序的项目的依赖。 Eclipse项目需要以下库的依赖关系：
 
   ```
   Android v4 support library
   Android v7 app compat support library
   ```
-2. Request the following permissions in your AndroidManifest.xml:
+2. 在 AndroidManifest.xml中添加以下权限：
 
   ```xml
   <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
@@ -26,7 +26,7 @@ Bugtags Android SDK for Eclipse
   <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
   <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
   ```
-3. add activities and service in AndroidManifest.xml:
+3. 在AndroidManifest.xml中添加所需的activity和服务：
 
   ```xml
     <activity android:name="com.bugtags.library.BugtagsActivity"
@@ -39,20 +39,21 @@ Bugtags Android SDK for Eclipse
               </intent-filter>
   </receiver>
   ```
-4. Add the following init call to your application's onCreate() method:
+4. 在你的Application的onCreate() 方法中初始化Bugtags：
 
   ```java
     Bugtags.start("YOUR APPKEY", this, Bugtags.BTGInvocationEventBubble);
   ```
-5. Change your base activity to extend one of the following activities, to enable automatically tracking user steps:
+5. 让你的Activity中继承以下Activity, 则可自动跟踪用户步骤：
 ```java
  BugtagsAppCompatActivity: This extends android.support.v7.app.AppCompatActivity
  BugtagsActionBarActivity: This extends android.support.v7.app.ActionBarActivity
  BugtagsActivity: This extends android.app.activity
  BugtagsFragmentActivity: This extends android.support.v4.app.FragmentActivity
 ```
-*or invoke the callbacks manually:*
+*也可以在你的Activity中手动添加回调，请参考：[CustomActivity](#customactivity).*
 
+  ##	CustomActivity
   ```java
         package your.package.name;
         import android.app.Activity;

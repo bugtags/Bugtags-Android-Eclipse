@@ -2,12 +2,12 @@
 <resources>
 
     <declare-styleable name="BtgRippleView">
-        <attr name="rv_background" format="reference"/>
-        <attr name="rv_foreground" format="reference"/>
+        <attr name="btg_rv_background" format="reference"/>
+        <attr name="btg_rv_foreground" format="reference"/>
     </declare-styleable>
 
     <declare-styleable name="BtgHorizontalListView">
-        <attr name="dividerWidth" format="dimension"/>
+        <attr name="btg_dividerWidth" format="dimension"/>
         <attr name="android:divider"/>
         <attr name="android:requiresFadingEdge"/>
         <attr name="android:fadingEdgeLength"/>

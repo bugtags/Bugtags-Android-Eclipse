@@ -6,8 +6,8 @@
 	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.LIBRARIES"/>
 	<classpathentry exported="true" kind="lib" path="libs/nineoldandroids-2.4.0.jar"/>
 	<classpathentry exported="true" kind="lib" path="libs/volley-1.0.16.jar"/>
-	<classpathentry exported="true" kind="lib" path="libs/bugtags-core-0.9.0.jar"/>
-	<classpathentry exported="true" kind="lib" path="libs/bugtags-lib-0.9.0.jar"/>
+	<classpathentry exported="true" kind="lib" path="libs/bugtags-core-1.0.1.jar"/>
+	<classpathentry exported="true" kind="lib" path="libs/bugtags-lib-1.0.1.jar"/>
 	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.DEPENDENCIES"/>
 	<classpathentry kind="output" path="bin/classes"/>
 </classpath>
