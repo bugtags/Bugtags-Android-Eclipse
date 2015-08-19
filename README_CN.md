@@ -45,13 +45,13 @@ Bugtags Android SDK for Eclipse
     Bugtags.start("YOUR APPKEY", this, Bugtags.BTGInvocationEventBubble);
   ```
 5. 让你的Activity中继承以下Activity, 则可自动跟踪用户步骤：
-```java
- BugtagsAppCompatActivity: This extends android.support.v7.app.AppCompatActivity
- BugtagsActionBarActivity: This extends android.support.v7.app.ActionBarActivity
- BugtagsActivity: This extends android.app.activity
- BugtagsFragmentActivity: This extends android.support.v4.app.FragmentActivity
-```
-*也可以在你的Activity中手动添加回调，请参考：[CustomActivity](#customactivity).*
+  ```java
+   BugtagsAppCompatActivity: This extends android.support.v7.app.AppCompatActivity
+   BugtagsActionBarActivity: This extends android.support.v7.app.ActionBarActivity
+   BugtagsActivity: This extends android.app.activity
+   BugtagsFragmentActivity: This extends android.support.v4.app.FragmentActivity
+  ```
+  *也可以在你的Activity中手动添加回调，请参考：[CustomActivity](#customactivity).*
 
   ##	CustomActivity
   ```java

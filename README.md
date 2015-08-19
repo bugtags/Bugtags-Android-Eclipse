@@ -45,13 +45,13 @@ Bugtags Android SDK for Eclipse
     Bugtags.start("YOUR APPKEY", this, Bugtags.BTGInvocationEventBubble);
   ```
 5. Change your base activity to extend one of the following activities, to enable automatically tracking user steps:
-```java
- BugtagsAppCompatActivity: This extends android.support.v7.app.AppCompatActivity
- BugtagsActionBarActivity: This extends android.support.v7.app.ActionBarActivity
- BugtagsActivity: This extends android.app.activity
- BugtagsFragmentActivity: This extends android.support.v4.app.FragmentActivity
-```
-*or invoke the callbacks manually:*
+  ```java
+   BugtagsAppCompatActivity: This extends android.support.v7.app.AppCompatActivity
+   BugtagsActionBarActivity: This extends android.support.v7.app.ActionBarActivity
+   BugtagsActivity: This extends android.app.activity
+   BugtagsFragmentActivity: This extends android.support.v4.app.FragmentActivity
+  ```
+  *or invoke the callbacks manually:*
 
   ```java
         package your.package.name;
