@@ -6,12 +6,8 @@ Bugtags Android SDK for Eclipse
 
 > For more information, please visit: [Bugtags-Android]
 
-1. Clone this project to your disk and add it to your workspace then add it as a dependency in your application's project. The eclipse project requires the following library dependencies:
+1. Clone this project to your disk and add it to your workspace then add it as a dependency in your application's project.
 
-  ```
-  Android v4 support library
-  Android v7 app compat support library
-  ```
 2. Request the following permissions in your AndroidManifest.xml:
 
   ```xml
@@ -39,22 +35,31 @@ Bugtags Android SDK for Eclipse
               </intent-filter>
   </receiver>
   ```
-4. Add the following init call to your application's onCreate() method:
+4. Create subclass of Application，initialize Bugtags in onCreate() method:
+```java
+public class MyApplication extends Application {
 
-  ```java
-    Bugtags.start("YOUR APPKEY", this, Bugtags.BTGInvocationEventBubble);
-  ```
-5. Change your base activity to extend one of the following activities, to enable automatically tracking user steps:
-  ```java
-   BugtagsAppCompatActivity: This extends android.support.v7.app.AppCompatActivity
-   BugtagsActionBarActivity: This extends android.support.v7.app.ActionBarActivity
-   BugtagsActivity: This extends android.app.activity
-   BugtagsFragmentActivity: This extends android.support.v4.app.FragmentActivity
-  ```
-  *or invoke the callbacks manually:*
-
+    @Override
+    public void onCreate() {
+        super.onCreate();
+        //initialize here
+        Bugtags.start("YOUR APPKEY", this, Bugtags.BTGInvocationEventBubble);
+    }
+}
+```
+  Modify AndroidManifest.xml，use MyApplication:
+```xml
+<application
+    android:name=".MyApplication"
+    android:label="@string/app_name"
+    android:theme="@style/AppTheme" >
+    ....
+</application>
+```
+5. Add three callbacks in your base Activity class:
   ```java
         package your.package.name;
+
         import android.app.Activity;
         import android.os.Bundle;
         import android.view.MotionEvent;
@@ -63,31 +68,22 @@ Bugtags Android SDK for Eclipse
 
         public class CustomActivity extends Activity{
             @Override
-            protected void onCreate(Bundle savedInstanceState) {
-                super.onCreate(savedInstanceState);
-                Bugtags.onCreate(this);
-            }
-
-            @Override
             protected void onResume() {
                 super.onResume();
+                //callback 1
                 Bugtags.onResume(this);
             }
 
             @Override
             protected void onPause() {
                 super.onPause();
+                //callback 2
                 Bugtags.onPause(this);
             }
 
             @Override
-            protected void onDestroy() {
-                super.onDestroy();
-                Bugtags.onDestroy(this);
-            }
-
-            @Override
             public boolean dispatchTouchEvent(MotionEvent event) {
+                //callback 3
                 Bugtags.onDispatchTouchEvent(this, event);
                 return super.dispatchTouchEvent(event);
             }

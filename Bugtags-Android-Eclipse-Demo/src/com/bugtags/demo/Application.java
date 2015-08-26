@@ -8,6 +8,6 @@ public class Application extends android.app.Application {
     public void onCreate() {
         super.onCreate();
 
-        Bugtags.start("8f443d183b1d202a5b006faa4718e1a6", this, Bugtags.BTGInvocationEventBubble);
+        Bugtags.start("d3ad445a39bf60628f7acd4bd08eff4f", this, Bugtags.BTGInvocationEventBubble);
     }
 }

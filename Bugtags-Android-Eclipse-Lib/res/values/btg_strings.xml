@@ -3,13 +3,14 @@
     <!--global-->
     <string name="btg_global_cancel">Cancel</string>
     <string name="btg_global_confirm">OK</string>
-    <string name="btg_global_close">Close</string>
     <string name="btg_global_got_it">Got it!</string>
+    <string name="btg_global_error">Error! Try Again!</string>
 
     <!--report-->
     <string name="btg_report_tag_hint">issue description</string>
     <string name="btg_report_tag_improve">Feature</string>
     <string name="btg_report_tag_bug">Bug</string>
+    <string name="btg_report_start">Start Describe</string>
 
     <!--tag-->
     <string name="btg_report_discard_alert">Sure to discard?</string>
@@ -56,6 +57,6 @@
     <string name="btg_guide_sub_0">Tagging tips</string>
     <string name="btg_guide_sub_1">Tap screen to add a tag</string>
     <string name="btg_guide_sub_2">Tap tag to flip</string>
-    <string name="btg_guide_sub_3">Longpress tag to edit or delete</string>
+    <string name="btg_guide_sub_3">Long press tag to edit or delete</string>
 
 </resources>

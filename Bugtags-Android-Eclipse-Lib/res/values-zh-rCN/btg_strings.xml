@@ -3,7 +3,6 @@
     <!--global-->
     <string name="btg_global_cancel">取消</string>
     <string name="btg_global_confirm">确定</string>
-    <string name="btg_global_close">关闭</string>
 
     <!--report-->
     <string name="btg_report_tag_hint">文字描述</string>
@@ -55,5 +54,7 @@
     <string name="btg_guide_sub_1">单击屏幕选择标签位置</string>
     <string name="btg_guide_sub_0">标签要这么玩</string>
     <string name="btg_global_got_it">知道了！</string>
+    <string name="btg_report_start">开始描述问题</string>
+    <string name="btg_global_error">错误请重试！</string>
 
 </resources>

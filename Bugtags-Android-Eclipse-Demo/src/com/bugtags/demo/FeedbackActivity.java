@@ -8,12 +8,11 @@ import android.widget.Toast;
 
 import com.bugtags.demo.R;
 import com.bugtags.library.Bugtags;
-import com.bugtags.wrapper.BugtagsAppCompatActivity;
 
 /**
  * Created by bugtags.com on 15/7/29.
  */
-public class FeedbackActivity extends BugtagsAppCompatActivity {
+public class FeedbackActivity extends BaseActivity {
 
     private EditText mEditText;
 
@@ -22,11 +21,6 @@ public class FeedbackActivity extends BugtagsAppCompatActivity {
         super.onCreate(bundle);
 
         setContentView(R.layout.activity_feedback);
-
-        if (getSupportActionBar() != null) {
-            getSupportActionBar().setHomeButtonEnabled(true);
-            getSupportActionBar().setTitle(R.string.main_feedback);
-        }
 
         mEditText = (EditText) findViewById(R.id.inputText);
     }

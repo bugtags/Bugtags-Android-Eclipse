@@ -6,12 +6,8 @@ Bugtags Android SDK for Eclipse
 
 # 安装集成:
 
-1. 克隆本项目到本地，并添加到你的工作空间，然后将其添加为你的应用程序的项目的依赖。 Eclipse项目需要以下库的依赖关系：
+1. 克隆本项目到本地，并添加到你的工作空间，然后将其添加为你的应用程序的项目的依赖。
 
-  ```
-  Android v4 support library
-  Android v7 app compat support library
-  ```
 2. 在 AndroidManifest.xml中添加以下权限：
 
   ```xml
@@ -39,60 +35,64 @@ Bugtags Android SDK for Eclipse
               </intent-filter>
   </receiver>
   ```
-4. 在你的Application的onCreate() 方法中初始化Bugtags：
+4. 继承Application，在onCreate() 方法中初始化Bugtags：
+```java
+public class MyApplication extends Application {
+
+    @Override
+    public void onCreate() {
+        super.onCreate();
+        //在这里初始化
+        Bugtags.start("YOUR APPKEY", this, Bugtags.BTGInvocationEventBubble);
+    }
+}
+```
+修改AndroidManifest.xml，使用MyApplication类,例如：
+```xml
+<application
+    android:name=".MyApplication"
+    android:label="@string/app_name"
+    android:theme="@style/AppTheme" >
+    ....
+</application>
+```
 
   ```java
     Bugtags.start("YOUR APPKEY", this, Bugtags.BTGInvocationEventBubble);
   ```
-5. 让你的Activity中继承以下Activity, 则可自动跟踪用户步骤：
+5. 在你的Activity基类中添加三个回调：
+
   ```java
-   BugtagsAppCompatActivity: This extends android.support.v7.app.AppCompatActivity
-   BugtagsActionBarActivity: This extends android.support.v7.app.ActionBarActivity
-   BugtagsActivity: This extends android.app.activity
-   BugtagsFragmentActivity: This extends android.support.v4.app.FragmentActivity
-  ```
-  *也可以在你的Activity中手动添加回调，请参考：[CustomActivity](#customactivity).*
+      package your.package.name;
 
-  ##	CustomActivity
-  ```java
-        package your.package.name;
-        import android.app.Activity;
-        import android.os.Bundle;
-        import android.view.MotionEvent;
+      import android.app.Activity;
+      import android.os.Bundle;
+      import android.view.MotionEvent;
 
-        import com.bugtags.library.Bugtags;
+      import com.bugtags.library.Bugtags;
 
-        public class CustomActivity extends Activity{
-            @Override
-            protected void onCreate(Bundle savedInstanceState) {
-                super.onCreate(savedInstanceState);
-                Bugtags.onCreate(this);
-            }
+      public class CustomActivity extends Activity{
+          @Override
+          protected void onResume() {
+              super.onResume();
+              //callback 1
+              Bugtags.onResume(this);
+          }
 
-            @Override
-            protected void onResume() {
-                super.onResume();
-                Bugtags.onResume(this);
-            }
+          @Override
+          protected void onPause() {
+              super.onPause();
+              //callback 2
+              Bugtags.onPause(this);
+          }
 
-            @Override
-            protected void onPause() {
-                super.onPause();
-                Bugtags.onPause(this);
-            }
-
-            @Override
-            protected void onDestroy() {
-                super.onDestroy();
-                Bugtags.onDestroy(this);
-            }
-
-            @Override
-            public boolean dispatchTouchEvent(MotionEvent event) {
-                Bugtags.onDispatchTouchEvent(this, event);
-                return super.dispatchTouchEvent(event);
-            }
-        }
+          @Override
+          public boolean dispatchTouchEvent(MotionEvent event) {
+              //callback 3
+              Bugtags.onDispatchTouchEvent(this, event);
+              return super.dispatchTouchEvent(event);
+          }
+      }
   ```
 
 [Bugtags-Android]:https://github.com/bugtags/Bugtags-Android
