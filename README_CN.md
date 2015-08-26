@@ -6,7 +6,7 @@ Bugtags Android SDK for Eclipse
 
 # 安装集成:
 
-## 第一步
+## 第一步：
 * 克隆本项目到本地，并添加到你的工作空间，然后将其添加为你的应用程序的项目的依赖。
 
 * 在 AndroidManifest.xml中添加以下权限：
@@ -34,7 +34,7 @@ Bugtags Android SDK for Eclipse
             </intent-filter>
 </receiver>
 ```
-## 第二步
+## 第二步：
 * 继承Application，在onCreate() 方法中初始化Bugtags：
 ```java
 public class MyApplication extends Application {
@@ -56,7 +56,7 @@ public class MyApplication extends Application {
     ....
 </application>
 ```
-## 第三步
+## 第三步：
 * 在你的Activity基类中添加三个回调：
 ```java
     package your.package.name;

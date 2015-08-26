@@ -6,7 +6,7 @@ Bugtags Android SDK for Eclipse
 
 > For more information, please visit: [Bugtags-Android]
 
-## Step 1
+## Step 1:
 * Clone this project to your disk and add it to your workspace then add it as a dependency in your application's project.
 
 * Request the following permissions in your AndroidManifest.xml:
@@ -34,7 +34,7 @@ Bugtags Android SDK for Eclipse
             </intent-filter>
 </receiver>
 ```
-## Step 2
+## Step 2:
 * Create subclass of Application，initialize Bugtags in onCreate() method:
 ```java
 public class MyApplication extends Application {
@@ -56,7 +56,7 @@ Modify AndroidManifest.xml，use MyApplication:
     ....
 </application>
 ```
-## Step 3
+## Step 3:
 * Add three callbacks in your base Activity class:
 ```java
     package your.package.name;
