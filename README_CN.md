@@ -56,11 +56,6 @@ public class MyApplication extends Application {
     ....
 </application>
 ```
-
-  ```java
-    Bugtags.start("YOUR APPKEY", this, Bugtags.BTGInvocationEventBubble);
-  ```
-  
 5. 在你的Activity基类中添加三个回调：
 
   ```java

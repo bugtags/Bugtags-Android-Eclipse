@@ -49,7 +49,7 @@ public class MyApplication extends Application {
     }
 }
 ```
-  Modify AndroidManifest.xml，use MyApplication:
+Modify AndroidManifest.xml，use MyApplication:
 ```xml
 <application
     android:name=".MyApplication"
