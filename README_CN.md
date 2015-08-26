@@ -6,9 +6,9 @@ Bugtags Android SDK for Eclipse
 
 # 安装集成:
 
-1. 克隆本项目到本地，并添加到你的工作空间，然后将其添加为你的应用程序的项目的依赖。
+* 1.克隆本项目到本地，并添加到你的工作空间，然后将其添加为你的应用程序的项目的依赖。
 
-2. 在 AndroidManifest.xml中添加以下权限：
+* 2.在 AndroidManifest.xml中添加以下权限：
 ```xml
 <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
 <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
@@ -21,7 +21,7 @@ Bugtags Android SDK for Eclipse
 <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
 <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
 ```
-3. 在AndroidManifest.xml中添加所需的activity和服务：
+* 3.在AndroidManifest.xml中添加所需的activity和服务：
 ```xml
 <activity android:name="com.bugtags.library.BugtagsActivity"
             android:configChanges="keyboardHidden|orientation|screenSize"
@@ -33,7 +33,7 @@ Bugtags Android SDK for Eclipse
             </intent-filter>
 </receiver>
 ```
-4. 继承Application，在onCreate() 方法中初始化Bugtags：
+* 4.继承Application，在onCreate() 方法中初始化Bugtags：
 ```java
 public class MyApplication extends Application {
 
@@ -54,7 +54,7 @@ public class MyApplication extends Application {
     ....
 </application>
 ```
-5. 在你的Activity基类中添加三个回调：
+* 5.在你的Activity基类中添加三个回调：
 ```java
     package your.package.name;
 
