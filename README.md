@@ -56,6 +56,7 @@ public class MyApplication extends Application {
     ....
 </application>
 ```
+
 5. Add three callbacks in your base Activity class:
   ```java
         package your.package.name;
