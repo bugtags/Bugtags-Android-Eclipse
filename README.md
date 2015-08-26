@@ -6,9 +6,10 @@ Bugtags Android SDK for Eclipse
 
 > For more information, please visit: [Bugtags-Android]
 
-* 1.Clone this project to your disk and add it to your workspace then add it as a dependency in your application's project.
+## Step 1
+* Clone this project to your disk and add it to your workspace then add it as a dependency in your application's project.
 
-* 2.Request the following permissions in your AndroidManifest.xml:
+* Request the following permissions in your AndroidManifest.xml:
 ```xml
 <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
 <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
@@ -21,7 +22,7 @@ Bugtags Android SDK for Eclipse
 <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
 <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
 ```
-* 3.add activities and service in AndroidManifest.xml:
+* .add activities and service in AndroidManifest.xml:
 ```xml
   <activity android:name="com.bugtags.library.BugtagsActivity"
             android:configChanges="keyboardHidden|orientation|screenSize"
@@ -33,7 +34,8 @@ Bugtags Android SDK for Eclipse
             </intent-filter>
 </receiver>
 ```
-* 4.Create subclass of Application，initialize Bugtags in onCreate() method:
+## Step 2
+* Create subclass of Application，initialize Bugtags in onCreate() method:
 ```java
 public class MyApplication extends Application {
 
@@ -54,7 +56,8 @@ Modify AndroidManifest.xml，use MyApplication:
     ....
 </application>
 ```
-* 5.Add three callbacks in your base Activity class:
+## Step 3
+* Add three callbacks in your base Activity class:
 ```java
     package your.package.name;
 
