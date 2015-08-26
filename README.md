@@ -22,6 +22,7 @@ Bugtags Android SDK for Eclipse
   <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
   <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
   ```
+
 3. add activities and service in AndroidManifest.xml:
 
   ```xml
@@ -35,6 +36,7 @@ Bugtags Android SDK for Eclipse
               </intent-filter>
   </receiver>
   ```
+
 4. Create subclass of Application，initialize Bugtags in onCreate() method:
 ```java
 public class MyApplication extends Application {
