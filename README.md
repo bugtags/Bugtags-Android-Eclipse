@@ -34,29 +34,8 @@ Bugtags Android SDK for Eclipse
             </intent-filter>
 </receiver>
 ```
-## Step 2:
-* Create subclass of Application，initialize Bugtags in onCreate() method:
-```java
-public class MyApplication extends Application {
 
-    @Override
-    public void onCreate() {
-        super.onCreate();
-        //initialize here
-        Bugtags.start("YOUR APPKEY", this, Bugtags.BTGInvocationEventBubble);
-    }
-}
-```
-Modify AndroidManifest.xml，use MyApplication:
-```xml
-<application
-    android:name=".MyApplication"
-    android:label="@string/app_name"
-    android:theme="@style/AppTheme" >
-    ....
-</application>
-```
-## Step 3:
+## Step 2:
 * Add three callbacks in your base Activity class:
 ```java
     package your.package.name;
@@ -90,5 +69,31 @@ Modify AndroidManifest.xml，use MyApplication:
         }
     }
 ```
+
+## Step 3:
+* Create subclass of Application，initialize Bugtags in onCreate() method:
+```java
+public class MyApplication extends Application {
+
+    @Override
+    public void onCreate() {
+        super.onCreate();
+        //initialize here
+        Bugtags.start("YOUR APPKEY", this, Bugtags.BTGInvocationEventBubble);
+    }
+}
+```
+Modify AndroidManifest.xml，use MyApplication:
+```xml
+<application
+    android:name=".MyApplication"
+    android:label="@string/app_name"
+    android:theme="@style/AppTheme" >
+    ....
+</application>
+```
+
+# License
+This demo is [BSD-licensed](LICENSE).
 
 [Bugtags-Android]:https://github.com/bugtags/Bugtags-Android

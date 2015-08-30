@@ -34,29 +34,8 @@ Bugtags Android SDK for Eclipse
             </intent-filter>
 </receiver>
 ```
-## 第二步：
-* 继承Application，在onCreate() 方法中初始化Bugtags：
-```java
-public class MyApplication extends Application {
 
-    @Override
-    public void onCreate() {
-        super.onCreate();
-        //在这里初始化
-        Bugtags.start("YOUR APPKEY", this, Bugtags.BTGInvocationEventBubble);
-    }
-}
-```
-修改AndroidManifest.xml，使用MyApplication类,例如：
-```xml
-<application
-    android:name=".MyApplication"
-    android:label="@string/app_name"
-    android:theme="@style/AppTheme" >
-    ....
-</application>
-```
-## 第三步：
+## 第二步：
 * 在你的Activity基类中添加三个回调：
 ```java
     package your.package.name;
@@ -91,4 +70,29 @@ public class MyApplication extends Application {
     }
 ```
 
+## 第三步：
+* 继承Application，在onCreate() 方法中初始化Bugtags：
+```java
+public class MyApplication extends Application {
+
+    @Override
+    public void onCreate() {
+        super.onCreate();
+        //在这里初始化
+        Bugtags.start("YOUR APPKEY", this, Bugtags.BTGInvocationEventBubble);
+    }
+}
+```
+修改AndroidManifest.xml，使用MyApplication类,例如：
+```xml
+<application
+    android:name=".MyApplication"
+    android:label="@string/app_name"
+    android:theme="@style/AppTheme" >
+    ....
+</application>
+```
+
+# License
+This demo is [BSD-licensed](LICENSE).
 [Bugtags-Android]:https://github.com/bugtags/Bugtags-Android
