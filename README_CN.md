@@ -1,5 +1,7 @@
 Bugtags Android SDK for Eclipse
 ===================
+> Latest version: **1.0.4**
+
 > 如果你使用Android Studio来开发Android App, 请访问: [Bugtags-Android].
 
 > 要获取更多信息，请访问: [Bugtags-Android]。
@@ -95,4 +97,21 @@ public class MyApplication extends Application {
 
 # License
 This demo is [BSD-licensed](LICENSE).
+
+
+# Change log
+
+2015.09.03    1.0.4    性能优化
+
+2015.08.26    1.0.3    传输反馈、精简依赖、改善集成方式
+
+2015.08.20    1.0.2    性能优化
+
+2015.08.15    1.0.1    小问题修改
+
+2015.08.07    1.0.0    正式版发布
+
+2015.08.01    0.9.0    Pre-release发布
+
+
 [Bugtags-Android]:https://github.com/bugtags/Bugtags-Android

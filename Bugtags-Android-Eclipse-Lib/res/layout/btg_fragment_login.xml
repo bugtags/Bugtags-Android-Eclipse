@@ -82,6 +82,7 @@
                 android:layout_marginRight="@dimen/btg_global_margin_tiny"/>
 
             <EditText
+                android:singleLine="true"
                 android:id="@+id/captchaText"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/btg_login_text_height"
@@ -93,7 +94,7 @@
                 android:drawableLeft="@drawable/btg_icon_captcha"
                 android:drawablePadding="@dimen/btg_global_margin_standard"
                 android:hint="@string/btg_login_captcha"
-                android:inputType="textPassword"
+                android:inputType="text"
                 android:textSize="@dimen/btg_global_font_big"/>
 
             <ImageView
