@@ -27,7 +27,7 @@ Bugtags Android SDK for Eclipse
 ```
 * .add activities and service in AndroidManifest.xml:
 ```xml
-  <activity android:name="com.bugtags.library.BugtagsActivity"
+<activity android:name="com.bugtags.library.BugtagsActivity"
             android:configChanges="keyboardHidden|orientation|screenSize"
             android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"/>
 <service android:name="com.bugtags.library.BugtagsService"/>
