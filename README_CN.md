@@ -1,6 +1,6 @@
 Bugtags Android SDK for Eclipse
 ===================
-> Latest version: **1.0.4**
+> Latest version: **1.0.5**
 
 > 如果你使用Android Studio来开发Android App, 请访问: [Bugtags-Android].
 
