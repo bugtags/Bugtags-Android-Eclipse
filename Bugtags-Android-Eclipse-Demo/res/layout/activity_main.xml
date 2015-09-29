@@ -1,15 +1,15 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@android:color/white"
-    tools:context=".MainActivity" >
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/white"
+                tools:context=".MainActivity">
 
     <ImageView
         android:id="@+id/topImage"
         android:layout_width="match_parent"
         android:layout_height="200dp"
-        android:background="@drawable/btg_main_banner" />
+        android:background="@drawable/btg_main_banner"/>
 
     <LinearLayout
         android:id="@+id/topButton"
@@ -17,7 +17,7 @@
         android:layout_height="130dp"
         android:layout_below="@id/topImage"
         android:orientation="horizontal"
-        android:weightSum="2" >
+        android:weightSum="2">
 
         <Button
             android:layout_width="0dp"
@@ -30,12 +30,12 @@
             android:paddingTop="30dp"
             android:text="@string/main_functions"
             android:textColor="@android:color/darker_gray"
-            android:textSize="@dimen/global_font_big" />
+            android:textSize="@dimen/global_font_big"/>
 
         <ImageView
             android:layout_width="1dp"
             android:layout_height="match_parent"
-            android:background="@drawable/btg_line_vertical" />
+            android:background="@drawable/btg_demo_line_vertical"/>
 
         <Button
             android:layout_width="0dp"
@@ -48,7 +48,8 @@
             android:paddingTop="30dp"
             android:text="@string/main_config"
             android:textColor="@android:color/darker_gray"
-            android:textSize="@dimen/global_font_big" />
+            android:textSize="@dimen/global_font_big"/>
+
     </LinearLayout>
 
     <ImageView
@@ -56,7 +57,7 @@
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:layout_below="@id/topButton"
-        android:background="@drawable/btg_line_horizontal" />
+        android:background="@drawable/btg_demo_line_horizontal"/>
 
     <LinearLayout
         android:id="@+id/bottomButton"
@@ -64,7 +65,7 @@
         android:layout_height="130dp"
         android:layout_below="@id/middleLine"
         android:orientation="horizontal"
-        android:weightSum="2" >
+        android:weightSum="2">
 
         <Button
             android:layout_width="0dp"
@@ -77,12 +78,12 @@
             android:paddingTop="30dp"
             android:text="@string/main_feedback"
             android:textColor="@android:color/darker_gray"
-            android:textSize="@dimen/global_font_big" />
+            android:textSize="@dimen/global_font_big"/>
 
         <ImageView
             android:layout_width="1dp"
             android:layout_height="match_parent"
-            android:background="@drawable/btg_line_vertical" />
+            android:background="@drawable/btg_demo_line_vertical"/>
 
         <Button
             android:layout_width="0dp"
@@ -95,23 +96,24 @@
             android:paddingTop="30dp"
             android:text="@string/main_custom"
             android:textColor="@android:color/darker_gray"
-            android:textSize="@dimen/global_font_big" />
+            android:textSize="@dimen/global_font_big"/>
+
     </LinearLayout>
 
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:layout_below="@id/bottomButton"
-        android:background="@drawable/btg_line_horizontal" />
+        android:background="@drawable/btg_demo_line_horizontal"/>
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="34dp"
         android:layout_alignParentBottom="true"
-        android:background="@drawable/btg_btn_blue_rect_normal"
+        android:background="@drawable/btg_demo_btn_blue_rect_normal"
         android:gravity="center"
         android:text="@string/main_born"
         android:textColor="@android:color/white"
-        android:textSize="@dimen/global_font_less_big" />
+        android:textSize="@dimen/global_font_less_big"/>
 
 </RelativeLayout>

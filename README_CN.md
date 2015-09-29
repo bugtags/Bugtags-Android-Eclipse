@@ -100,6 +100,7 @@ This demo is [BSD-licensed](LICENSE).
 
 
 # Change log
+2015.09.29    1.0.5    崩溃截图、更多启动选项、bug修复、性能优化
 
 2015.09.03    1.0.4    性能优化
 

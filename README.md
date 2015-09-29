@@ -101,6 +101,7 @@ This demo is [BSD-licensed](LICENSE).
 
 
 # Change log
+2015.09.29    1.0.5    crash with photo, start options, bug fix, performance improving
 
 2015.09.03    1.0.4    performance improving
 

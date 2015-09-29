@@ -1,6 +1,3 @@
-# view AndroidManifest.xml #generated:22
--keep class com.bugtags.demo.Application { <init>(...); }
-
 # view AndroidManifest.xml #generated:60
 -keep class com.bugtags.demo.ConfigActivity { <init>(...); }
 
@@ -15,6 +12,9 @@
 
 # view AndroidManifest.xml #generated:44
 -keep class com.bugtags.demo.MainActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:22
+-keep class com.bugtags.demo.MyApplication { <init>(...); }
 
 # view AndroidManifest.xml #generated:29
 -keep class com.bugtags.library.BugtagsActivity { <init>(...); }
@@ -47,21 +47,21 @@
 # view res/layout/btg_fragment_report.xml #generated:17
 -keep class com.bugtags.library.ui.tag.TagCloudView { <init>(...); }
 
-# onClick res/layout/activity_custom.xml #generated:19
+# onClick res/layout/activity_custom.xml #generated:20
 -keepclassmembers class * { *** onBack(...); }
 
 # onClick res/layout/activity_main.xml #generated:40
 -keepclassmembers class * { *** onConfig(...); }
 
-# onClick res/layout/activity_main.xml #generated:87
+# onClick res/layout/activity_main.xml #generated:88
 -keepclassmembers class * { *** onCustom(...); }
 
-# onClick res/layout/activity_main.xml #generated:69
+# onClick res/layout/activity_main.xml #generated:70
 -keepclassmembers class * { *** onFeedback(...); }
 
 # onClick res/layout/activity_main.xml #generated:22
 -keepclassmembers class * { *** onFunctions(...); }
 
-# onClick res/layout/activity_feedback.xml #generated:23
+# onClick res/layout/activity_feedback.xml #generated:24
 -keepclassmembers class * { *** onPost(...); }
 
