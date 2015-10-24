@@ -1,6 +1,6 @@
 Bugtags Android SDK for Eclipse
 ===================
-> Latest version: **1.0.5**
+> Latest version: **1.0.6**
 
 > 如果你使用Android Studio来开发Android App, 请访问: [Bugtags-Android].
 
@@ -100,6 +100,16 @@ This demo is [BSD-licensed](LICENSE).
 
 
 # Change log
+2015.10.24    1.0.6     
+- 支持targetSdkVersion 23(Android M, 6.0)；
+- 新增长按截图按钮重新开始记录数据;
+- 支持后台高级设置的匿名提交选项；
+- 优化闪退捕捉逻辑，Debugger Connected状态下默认不上报闪退；
+- 设备信息增加CPU构架信息；
+- 修正console log获取逻辑；
+- 权限可裁剪，裁剪方法见帮助文档；
+- 启动选项可选crash截屏。
+
 2015.09.29    1.0.5    崩溃截图、更多启动选项、bug修复、性能优化
 
 2015.09.03    1.0.4    性能优化

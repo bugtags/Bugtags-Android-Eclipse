@@ -219,10 +219,10 @@ global
         public static int btg_global_got_it=0x7f060002;
         /** guide
          */
-        public static int btg_guide_sub_0=0x7f06001c;
-        public static int btg_guide_sub_1=0x7f06001d;
-        public static int btg_guide_sub_2=0x7f06001e;
-        public static int btg_guide_sub_3=0x7f06001f;
+        public static int btg_guide_sub_0=0x7f06001d;
+        public static int btg_guide_sub_1=0x7f06001e;
+        public static int btg_guide_sub_2=0x7f06001f;
+        public static int btg_guide_sub_3=0x7f060020;
         public static int btg_login_captcha=0x7f060012;
         public static int btg_login_captcha_needed=0x7f060013;
         public static int btg_login_do=0x7f060014;
@@ -258,6 +258,11 @@ report
          */
         public static int btg_report_tag_hint=0x7f060004;
         public static int btg_report_tag_improve=0x7f060005;
+        /** restart log
+restart log
+restart log
+         */
+        public static int btg_restart_log_title=0x7f06001c;
         public static int btg_tag_menu_delete=0x7f06000b;
         public static int btg_tag_menu_edit=0x7f06000a;
         public static int btg_tag_menu_info=0x7f060009;

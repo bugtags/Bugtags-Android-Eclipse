@@ -3,7 +3,7 @@ Bugtags Android SDK for Eclipse
 ###中文文档请移步[README_CN](README_CN.md)
 ###QQ tribe for help: 479166560
 
-> The latest version is: **1.0.5**
+> The latest version is: **1.0.6**
 
 > If you are using Android Studio for Android development, please visit: [Bugtags-Android].
 
@@ -101,6 +101,16 @@ This demo is [BSD-licensed](LICENSE).
 
 
 # Change log
+2015.10.24    1.0.6     
+- support tartgetSdkVersion=23(Android M, 6.0)
+- long-press on "+" button to restart logging
+- support anonymous report options
+- improve crash collecting policy, disable when debugger connected
+- add CPU architecture for device information
+- fix console log policy
+- support uses-permission customization
+- start options for crashWichScrenshot
+
 2015.09.29    1.0.5    crash with photo, start options, bug fix, performance improving
 
 2015.09.03    1.0.4    performance improving

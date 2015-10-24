@@ -1,0 +1,22 @@
+# view res/layout/btg_fragment_tag_edit.xml #generated:108
+-keep class com.bugtags.library.ui.HorizontalListView { <init>(...); }
+
+# view res/layout/btg_fragment_tag_edit.xml #generated:44
+-keep class com.bugtags.library.ui.report.TagAssigneeView { <init>(...); }
+
+# view res/layout/btg_fragment_tag_edit.xml #generated:101
+-keep class com.bugtags.library.ui.report.TagPriorityPickView { <init>(...); }
+
+# view res/layout/btg_fragment_tag_edit.xml #generated:33
+-keep class com.bugtags.library.ui.report.TagPriorityView { <init>(...); }
+
+# view res/layout/btg_fragment_tag_edit.xml #generated:22
+-keep class com.bugtags.library.ui.report.TagTypeView { <init>(...); }
+
+# view res/layout/btg_view_member.xml #generated:11
+# view res/layout/btg_view_tag_state.xml #generated:15
+-keep class com.bugtags.library.ui.rounded.CircleImageView { <init>(...); }
+
+# view res/layout/btg_fragment_report.xml #generated:17
+-keep class com.bugtags.library.ui.tag.TagCloudView { <init>(...); }
+

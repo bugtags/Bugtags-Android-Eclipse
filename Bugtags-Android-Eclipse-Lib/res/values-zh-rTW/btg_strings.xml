@@ -41,6 +41,9 @@
     <string name="btg_login_progress">正在登錄&#8203;</string>
     <string name="btg_login_failed">登錄失敗，請重試</string>
 
+    <!--restart log-->
+    <string name="btg_restart_log_title">確定從現在開始記錄數據嗎？</string>
+    
     <!--logout-->
     <string name="btg_logout_title">選擇操作</string>
     <string name="btg_logout_my_issue">我的問題</string>

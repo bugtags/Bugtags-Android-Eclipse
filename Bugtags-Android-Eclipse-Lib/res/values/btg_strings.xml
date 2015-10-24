@@ -53,6 +53,9 @@
     <string name="btg_logout_do">Sign out</string>
     <string name="btg_logout_confirm">Sure to sign out?</string>
 
+    <!--restart log-->
+    <string name="btg_restart_log_title">Sure to restart trace?</string>
+    
     <!--guide-->
     <string name="btg_guide_sub_0">Tagging tips</string>
     <string name="btg_guide_sub_1">Tap screen to add a tag</string>

@@ -41,6 +41,9 @@
     <string name="btg_login_progress">正在登录&#8203;</string>
     <string name="btg_login_failed">登录失败，请重试</string>
 
+    <!--restart log-->
+    <string name="btg_restart_log_title">确定从现在开始记录数据吗？</string>
+    
     <!--logout-->
     <string name="btg_logout_title">选择操作</string>
     <string name="btg_logout_my_issue">我的问题</string>
