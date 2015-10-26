@@ -18,3 +18,10 @@
 #-keepclassmembers class fqcn.of.javascript.interface.for.webview {
 #   public *;
 #}
+-keepattributes LineNumberTable,SourceFile
+
+-dontwarn android.support.v4.**
+-keep class com.bugtags.library.** {*;}
+-dontwarn org.apache.http.**
+-dontwarn android.net.http.AndroidHttpClient
+-dontwarn com.bugtags.library.vender.**
