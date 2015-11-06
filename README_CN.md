@@ -1,6 +1,6 @@
 Bugtags Android SDK for Eclipse
 ===================
-> Latest version: **1.0.6**
+> Latest version: **1.0.7**
 
 > 如果你使用Android Studio来开发Android App, 请访问: [Bugtags-Android].
 
@@ -100,6 +100,10 @@ This demo is [BSD-licensed](LICENSE).
 
 
 # Change log
+2015.11.06    1.0.7
+- 自定义version name 与 version code
+- bug fix
+
 2015.10.24    1.0.6     
 - 支持targetSdkVersion 23(Android M, 6.0)；
 - 新增长按截图按钮重新开始记录数据;

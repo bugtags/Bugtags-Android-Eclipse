@@ -3,7 +3,7 @@ Bugtags Android SDK for Eclipse
 ###中文文档请移步[README_CN](README_CN.md)
 ###QQ tribe for help: 479166560
 
-> The latest version is: **1.0.6**
+> The latest version is: **1.0.7**
 
 > If you are using Android Studio for Android development, please visit: [Bugtags-Android].
 
@@ -101,6 +101,10 @@ This demo is [BSD-licensed](LICENSE).
 
 
 # Change log
+2015.11.06    1.0.7
+- add api for custom version name & version code
+- bug fix
+
 2015.10.24    1.0.6     
 - support tartgetSdkVersion=23(Android M, 6.0)
 - long-press on "+" button to restart logging
