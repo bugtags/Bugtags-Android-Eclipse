@@ -1,6 +1,6 @@
 Bugtags Android SDK for Eclipse
 ===================
-> Latest version: **1.0.7**
+> Latest version: **1.0.8**
 
 > 如果你使用Android Studio来开发Android App, 请访问: [Bugtags-Android].
 
@@ -100,6 +100,10 @@ This demo is [BSD-licensed](LICENSE).
 
 
 # Change log
+2015.11.19    1.0.8
+- 截图改进：包括 Toast 和 Dialog
+- 性能优化
+
 2015.11.06    1.0.7
 - 自定义version name 与 version code
 - bug fix

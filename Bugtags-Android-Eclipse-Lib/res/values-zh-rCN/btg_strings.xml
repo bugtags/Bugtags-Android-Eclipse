@@ -7,7 +7,7 @@
     <!--report-->
     <string name="btg_report_tag_hint">文字描述</string>
     <string name="btg_report_tag_improve">改进</string>
-    <string name="btg_report_tag_bug">错误</string>
+    <string name="btg_report_tag_bug">Bug</string>
 
     <!--tag-->
     <string name="btg_report_discard_alert">确定要放弃提交吗？</string>
