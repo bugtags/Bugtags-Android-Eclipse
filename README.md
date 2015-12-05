@@ -3,7 +3,7 @@ Bugtags Android SDK for Eclipse
 ###中文文档请移步[README_CN](README_CN.md)
 ###QQ tribe for help: 479166560
 
-> The latest version is: **1.0.8**
+> The latest version is: **1.0.9**
 
 > If you are using Android Studio for Android development, please visit: [Bugtags-Android].
 
@@ -101,6 +101,11 @@ This demo is [BSD-licensed](LICENSE).
 
 
 # Change log
+2015.12.05    1.0.9
+- bugfix for user step timestamp, better layout
+- bugfix for some customized android ROM's missing sdcard
+- change reference to weak reference, prevent potential memory leak
+
 2015.11.19    1.0.8
 - screenshot with toast and dialog
 - performance improving

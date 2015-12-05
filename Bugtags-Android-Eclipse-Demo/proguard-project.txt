@@ -25,3 +25,4 @@
 -dontwarn org.apache.http.**
 -dontwarn android.net.http.AndroidHttpClient
 -dontwarn com.bugtags.library.vender.**
+-dontwarn com.bugtags.library.**
