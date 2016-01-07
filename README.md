@@ -101,6 +101,18 @@ This demo is [BSD-licensed](LICENSE).
 
 
 # Change log
+2016.01.06    1.1.0
+- support cocos2d-x game screenshot
+- add callback before and after sending issue  
+- add manually invoke screenshot
+- fix competing thread bug on resending issue
+- other bug fix
+
+2015.12.05    1.0.9
+- bugfix for user step timestamp, better layout
+- bugfix for some customized android ROM's missing sdcard
+- change reference to weak reference, prevent potential memory leak
+
 2015.12.05    1.0.9
 - bugfix for user step timestamp, better layout
 - bugfix for some customized android ROM's missing sdcard

@@ -1,6 +1,6 @@
 Bugtags Android SDK for Eclipse
 ===================
-> Latest version: **1.0.8**
+> Latest version: **1.1.0**
 
 > 如果你使用Android Studio来开发Android App, 请访问: [Bugtags-Android].
 
@@ -100,6 +100,18 @@ This demo is [BSD-licensed](LICENSE).
 
 
 # Change log
+2016.01.06    1.1.0
+- 增加对 cocos2d-x 游戏的截屏支持
+- 新增设置问题提交之前和之后的回调 API
+- 新增手动调用截屏界面的 API
+- 修复问题重传时可能产生的多线程竞争问题
+- 其他 bug 修复
+
+2015.12.05    1.0.9
+- 修复用户步骤时间记录的 bug，修改显示样式使得更易读
+- 修复某些安卓 ROM 的 sdcard 路径不规范可能引起的 bug
+- 修改对于 activity 的引用为软引用，防止可能存在的内存泄漏
+
 2015.11.19    1.0.8
 - 截图改进：包括 Toast 和 Dialog
 - 性能优化
