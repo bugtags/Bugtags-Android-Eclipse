@@ -57,7 +57,7 @@
     <string name="btg_restart_log_title">Sure to restart trace?</string>
     
     <!--guide-->
-    <string name="btg_guide_sub_0">Tagging tips</string>
+    <string name="btg_guide_sub_0">Report Bug via tag</string>
     <string name="btg_guide_sub_1">Tap screen to add a tag</string>
     <string name="btg_guide_sub_2">Tap tag to flip</string>
     <string name="btg_guide_sub_3">Long press tag to edit or delete</string>
