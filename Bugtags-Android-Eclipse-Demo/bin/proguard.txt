@@ -1,28 +1,28 @@
-# view AndroidManifest.xml #generated:60
+# view AndroidManifest.xml #generated:59
 -keep class com.bugtags.demo.ConfigActivity { <init>(...); }
 
-# view AndroidManifest.xml #generated:55
+# view AndroidManifest.xml #generated:54
 -keep class com.bugtags.demo.CustomActivity { <init>(...); }
 
-# view AndroidManifest.xml #generated:69
+# view AndroidManifest.xml #generated:68
 -keep class com.bugtags.demo.FeedbackActivity { <init>(...); }
 
-# view AndroidManifest.xml #generated:78
+# view AndroidManifest.xml #generated:77
 -keep class com.bugtags.demo.FunctionsActivity { <init>(...); }
 
-# view AndroidManifest.xml #generated:44
+# view AndroidManifest.xml #generated:43
 -keep class com.bugtags.demo.MainActivity { <init>(...); }
 
-# view AndroidManifest.xml #generated:22
+# view AndroidManifest.xml #generated:21
 -keep class com.bugtags.demo.MyApplication { <init>(...); }
 
-# view AndroidManifest.xml #generated:29
+# view AndroidManifest.xml #generated:28
 -keep class com.bugtags.library.BugtagsActivity { <init>(...); }
 
-# view AndroidManifest.xml #generated:34
+# view AndroidManifest.xml #generated:33
 -keep class com.bugtags.library.BugtagsReceiver { <init>(...); }
 
-# view AndroidManifest.xml #generated:40
+# view AndroidManifest.xml #generated:39
 -keep class com.bugtags.library.BugtagsService { <init>(...); }
 
 # view res/layout/btg_fragment_tag_edit.xml #generated:108
