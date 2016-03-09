@@ -3,7 +3,7 @@ Bugtags Android SDK for Eclipse
 ###中文文档请移步[README_CN](README_CN.md)
 ###QQ tribe for help: 479166560
 
-> The latest version is: **1.1.1**
+> The latest version is: **1.1.2**
 
 > If you are using Android Studio for Android development, please visit: [Bugtags-Android].
 
@@ -105,6 +105,10 @@ This demo is [BSD-licensed](LICENSE).
 
 
 # Change log
+### 2016.03.09 v1.1.2
+- fix issue: under some circumstance bubble disappears 
+- fix ineffective sslv3 solution in v1.1.1
+- other bug fix
 
 ### 2016.02.20 v1.1.1
 

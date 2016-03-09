@@ -1,6 +1,6 @@
 Bugtags Android SDK for Eclipse
 ===================
-> Latest version: **1.1.1**
+> Latest version: **1.1.2**
 
 > 如果你使用Android Studio来开发Android App, 请访问: [Bugtags-Android].
 
@@ -54,7 +54,7 @@ Bugtags Android SDK for Eclipse
         @Override
         protected void onResume() {
             super.onResume();
-            //callback 1
+            //callback 1            
             Bugtags.onResume(this);
         }
 
@@ -104,6 +104,12 @@ This demo is [BSD-licensed](LICENSE).
 
 
 # Change log
+### 2016.03.09 v1.1.2
+
+- 修复某些情况下小球可能会消失的问题
+- 修复 v1.1.1 中 sslv3 解决方案未生效的问题
+- 细节修复
+
 ### 2016.02.20 v1.1.1
 
 - 兼容 Java 1.6
