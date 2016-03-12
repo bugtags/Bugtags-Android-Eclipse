@@ -3,8 +3,6 @@ Bugtags Android SDK for Eclipse
 ###中文文档请移步[README_CN](README_CN.md)
 ###QQ tribe for help: 479166560
 
-> The latest version is: **1.1.2**
-
 > If you are using Android Studio for Android development, please visit: [Bugtags-Android].
 
 > For more information, please visit: [Bugtags-Android]
