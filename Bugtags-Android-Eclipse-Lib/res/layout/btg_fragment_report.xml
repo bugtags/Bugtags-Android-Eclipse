@@ -14,7 +14,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
 
-    <com.bugtags.library.ui.tag.TagCloudView
+    <com.bugtags.library.core.ui.tag.TagCloudView
         android:id="@+id/tagCloudView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>

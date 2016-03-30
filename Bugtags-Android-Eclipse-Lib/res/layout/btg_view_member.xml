@@ -8,7 +8,7 @@
         android:layout_height="@dimen/btg_report_member_item_height"
         android:layout_centerInParent="true">
 
-        <com.bugtags.library.ui.rounded.CircleImageView
+        <com.bugtags.library.core.ui.rounded.CircleImageView
             android:scaleType="centerCrop"
             android:src="@drawable/btg_icon_account"
             android:layout_centerHorizontal="true"
