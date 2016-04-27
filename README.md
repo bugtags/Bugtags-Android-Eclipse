@@ -103,6 +103,11 @@ This demo is [BSD-licensed](LICENSE).
 
 
 # Change log
+### 2016.04.26 v1.2.5
+- fix bug in network tracking in httpurlconnection
+- improve overlay permission granted logic in Andoid 6.0, only requested in needed
+- fix bug :bubble will be invisible after splash page under some circumstances 
+
 # 2016.04.14 v1.2.4
 - fix bug in network tracking in okhttp
 - fix bug in screenshot on devices with soft navigation bar
