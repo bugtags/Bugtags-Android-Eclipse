@@ -27,6 +27,7 @@
             android:background="@drawable/btg_line_horizontal"/>
 
         <EditText
+            android:inputType="textEmailAddress"
             android:id="@+id/usernameText"
             android:layout_width="match_parent"
             android:layout_height="@dimen/btg_login_text_height"
