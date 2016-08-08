@@ -241,4 +241,5 @@ Modify AndroidManifest.xml，use MyApplication:
 This demo is [BSD-licensed](LICENSE).
 
 # Links
-[Bugtags-Android]:https://github.com/bugtags/Bugtags-Android
+
+[Bugtags-Android](https://github.com/bugtags/Bugtags-Android)
