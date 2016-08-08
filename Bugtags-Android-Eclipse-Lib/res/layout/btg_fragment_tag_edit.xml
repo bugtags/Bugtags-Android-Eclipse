@@ -19,7 +19,7 @@
             android:orientation="horizontal"
             android:weightSum="3">
 
-            <com.bugtags.library.core.ui.report.TagTypeView
+            <io.bugtags.ui.view.report.TagTypeView
                 android:id="@+id/typeView"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
@@ -30,7 +30,7 @@
                 android:layout_height="match_parent"
                 android:background="@drawable/btg_line_vertical"/>
 
-            <com.bugtags.library.core.ui.report.TagPriorityView
+            <io.bugtags.ui.view.report.TagPriorityView
                 android:id="@+id/priorityView"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
@@ -41,7 +41,7 @@
                 android:layout_height="match_parent"
                 android:background="@drawable/btg_line_vertical"/>
 
-            <com.bugtags.library.core.ui.report.TagAssigneeView
+            <io.bugtags.ui.view.report.TagAssigneeView
                 android:id="@+id/assigneeView"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
@@ -98,14 +98,14 @@
             android:layout_below="@id/topView"
             android:background="@drawable/btg_line_horizontal"/>
 
-        <com.bugtags.library.core.ui.report.TagPriorityPickView
+        <io.bugtags.ui.view.report.TagPriorityPickView
             android:id="@+id/priorityPickView"
             android:layout_width="match_parent"
             android:layout_height="@dimen/btg_report_dialog_picker_height"
             android:layout_centerInParent="true"
             android:visibility="gone"/>
 
-        <com.bugtags.library.core.ui.HorizontalListView
+        <io.bugtags.ui.view.HorizontalListView
             android:padding="@dimen/btg_global_margin_tiny"
             android:id="@+id/assigneeListView"
             android:layout_width="match_parent"

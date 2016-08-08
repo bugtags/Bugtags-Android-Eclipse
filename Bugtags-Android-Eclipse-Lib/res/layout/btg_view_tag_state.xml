@@ -12,7 +12,7 @@
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"/>
 
-    <com.bugtags.library.core.ui.rounded.CircleImageView
+    <io.bugtags.ui.view.rounded.CircleImageView
         android:id="@+id/leftImage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

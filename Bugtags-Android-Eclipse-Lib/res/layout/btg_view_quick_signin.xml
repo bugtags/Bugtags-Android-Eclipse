@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/btg_quick_signin_item_height"
+        android:layout_centerInParent="true">
+
+        <TextView
+            android:id="@+id/usernameText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/btg_global_margin_large"
+            android:textColor="@color/btg_global_text_blue"
+            android:textSize="@dimen/btg_global_font_less_big" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/btg_global_margin_large"
+            android:src="@drawable/btg_btn_right" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/usernameText"
+            android:layout_marginTop="@dimen/btg_global_margin_standard"
+            android:background="@drawable/btg_line_horizontal" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

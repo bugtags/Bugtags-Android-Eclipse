@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@color/btg_global_translucent_white">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/btg_global_translucent_white">
 
     <LinearLayout
         android:layout_width="@dimen/btg_login_dialog_width"
@@ -14,20 +14,35 @@
         android:gravity="center_horizontal"
         android:orientation="vertical">
 
-        <ImageView
-            android:layout_width="@dimen/btg_login_logo_width"
-            android:layout_height="@dimen/btg_login_logo_height"
-            android:layout_marginTop="@dimen/btg_global_margin_large"
-            android:src="@drawable/btg_logo"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="@dimen/btg_login_logo_width"
+                android:layout_height="@dimen/btg_login_logo_height"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/btg_global_margin_large"
+                android:src="@drawable/btg_logo" />
+
+            <ImageView
+                android:id="@+id/quickSignIn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_margin="@dimen/btg_global_margin_standard"
+                android:src="@drawable/btg_btn_quick_signin"
+                android:visibility="invisible" />
+
+        </RelativeLayout>
 
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="1dp"
             android:layout_marginTop="@dimen/btg_global_margin_standard"
-            android:background="@drawable/btg_line_horizontal"/>
+            android:background="@drawable/btg_line_horizontal" />
 
         <EditText
-            android:inputType="textEmailAddress"
             android:id="@+id/usernameText"
             android:layout_width="match_parent"
             android:layout_height="@dimen/btg_login_text_height"
@@ -37,15 +52,16 @@
             android:drawableLeft="@drawable/btg_icon_account"
             android:drawablePadding="@dimen/btg_global_margin_standard"
             android:hint="@string/btg_login_username"
+            android:inputType="textEmailAddress"
             android:nextFocusForward="@+id/passwordText"
             android:singleLine="true"
-            android:textSize="@dimen/btg_global_font_big"/>
+            android:textSize="@dimen/btg_global_font_big" />
 
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="1dp"
             android:layout_marginTop="@dimen/btg_login_margin_top"
-            android:background="@drawable/btg_line_horizontal"/>
+            android:background="@drawable/btg_line_horizontal" />
 
         <EditText
             android:id="@+id/passwordText"
@@ -60,13 +76,13 @@
             android:inputType="textPassword"
             android:nextFocusForward="@+id/finishButton"
             android:singleLine="true"
-            android:textSize="@dimen/btg_global_font_big"/>
+            android:textSize="@dimen/btg_global_font_big" />
 
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="1dp"
             android:layout_marginTop="@dimen/btg_login_margin_top"
-            android:background="@drawable/btg_line_horizontal"/>
+            android:background="@drawable/btg_line_horizontal" />
 
         <RelativeLayout
             android:id="@+id/captchaView"
@@ -80,10 +96,9 @@
                 android:layout_height="@dimen/btg_login_text_height"
                 android:layout_alignParentRight="true"
                 android:layout_centerVertical="true"
-                android:layout_marginRight="@dimen/btg_global_margin_tiny"/>
+                android:layout_marginRight="@dimen/btg_global_margin_tiny" />
 
             <EditText
-                android:singleLine="true"
                 android:id="@+id/captchaText"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/btg_login_text_height"
@@ -96,14 +111,15 @@
                 android:drawablePadding="@dimen/btg_global_margin_standard"
                 android:hint="@string/btg_login_captcha"
                 android:inputType="text"
-                android:textSize="@dimen/btg_global_font_big"/>
+                android:singleLine="true"
+                android:textSize="@dimen/btg_global_font_big" />
 
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
                 android:layout_below="@id/captchaText"
                 android:layout_marginTop="@dimen/btg_login_margin_top"
-                android:background="@drawable/btg_line_horizontal"/>
+                android:background="@drawable/btg_line_horizontal" />
 
         </RelativeLayout>
 
@@ -123,7 +139,7 @@
                 android:layout_height="@dimen/btg_report_dialog_btn_height"
                 android:layout_weight="1"
                 android:background="@drawable/btg_btn_white_rect"
-                android:text="@string/btg_global_cancel"/>
+                android:text="@string/btg_global_cancel" />
 
             <Button
                 android:id="@+id/finishButton"
@@ -133,7 +149,7 @@
                 android:layout_marginLeft="@dimen/btg_global_margin_standard"
                 android:layout_weight="1"
                 android:background="@drawable/btg_btn_blue_rect"
-                android:text="@string/btg_login_do"/>
+                android:text="@string/btg_login_do" />
 
         </LinearLayout>
 

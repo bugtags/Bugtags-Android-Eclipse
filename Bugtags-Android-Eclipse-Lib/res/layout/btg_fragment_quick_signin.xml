@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/btg_global_translucent_white">
+
+    <LinearLayout
+        android:layout_width="@dimen/btg_login_dialog_width"
+        android:layout_height="@dimen/btg_quick_signin_height"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/btg_report_dialog_margin_top"
+        android:background="@drawable/btg_bg_dialog"
+        android:clickable="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="@dimen/btg_global_margin_large">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:id="@+id/leftImage"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentLeft="true"
+                android:background="@color/btg_global_transparent"
+                android:src="@drawable/btg_btn_left" />
+
+            <TextView
+                android:id="@+id/titleText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="@string/btg_quick_signin_title"
+                android:textColor="@color/btg_global_black_title"
+                android:textSize="@dimen/btg_global_font_large" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/titleText"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/btg_global_margin_tiny"
+                android:text="@string/btg_quick_signin_desc"
+                android:textColor="@color/btg_global_black_content"
+                android:textSize="@dimen/btg_global_font_standard" />
+
+        </RelativeLayout>
+
+        <ListView
+            android:id="@+id/listView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/btg_global_margin_standard"
+            android:divider="@color/btg_global_transparent" />
+
+    </LinearLayout>
+
+</RelativeLayout>
