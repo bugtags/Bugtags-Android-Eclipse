@@ -99,7 +99,7 @@ Modify AndroidManifest.xml，use MyApplication:
 ```
 
 # Change log
-### 1.3.0: August 8, 2016
+### 1.3.1: August 10, 2016
 - Fix: Fixed rare OOM exception on resending cached issues.
 - Enhancement: Set Bugtags.log max lines limit to 1000.
 - Enhancement: Upgrade cache system.
@@ -109,6 +109,7 @@ Modify AndroidManifest.xml，use MyApplication:
 - Feature: Added new start option: `enableUserSignIn`, you can set this flag according to your requirement.
 - Feature: Added plugin system,please refer: [API Reference](https://docs.bugtags.com/zh/api/android/index.html).
 - Feature: Added first official plugin: [BugtagsInsta](https://docs.bugtags.com/zh/bugtagsinsta/index.html) supports real-time tracking.
+- Fix: Fixed issue related to external storage permission.
 
 ### 1.2.7: June 7, 2016
 
