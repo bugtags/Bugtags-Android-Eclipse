@@ -21,8 +21,7 @@
 -keepattributes LineNumberTable,SourceFile
 
 -dontwarn android.support.v4.**
--keep class com.bugtags.library.** {*;}
+-keep class io.bugtags.library.** {*;}
 -dontwarn org.apache.http.**
 -dontwarn android.net.http.AndroidHttpClient
--dontwarn com.bugtags.library.vender.**
--dontwarn com.bugtags.library.**
+-dontwarn io.bugtags.library.**
