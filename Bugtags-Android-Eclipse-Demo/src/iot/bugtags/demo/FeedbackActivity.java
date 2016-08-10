@@ -1,4 +1,4 @@
-package com.bugtags.demo;
+package iot.bugtags.demo;
 
 import android.os.Bundle;
 import android.text.TextUtils;
@@ -6,10 +6,10 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.bugtags.library.Bugtags;
+import io.bugtags.library.Bugtags;
 
 /**
- * Created by bugtags.com on 15/7/29.
+ * Created by kevin on 15/7/29.
  */
 public class FeedbackActivity extends BaseActivity {
 

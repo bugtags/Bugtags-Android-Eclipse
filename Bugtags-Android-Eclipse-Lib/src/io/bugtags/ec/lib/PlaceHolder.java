@@ -1,4 +1,4 @@
-package com.bugtags.ec.lib;
+package io.bugtags.ec.lib;
 
 public class PlaceHolder {
 

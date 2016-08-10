@@ -1,9 +1,9 @@
-package com.bugtags.demo;
+package iot.bugtags.demo;
 
 import android.os.Bundle;
 
 /**
- * Created by bugtags.com on 15/7/29.
+ * Created by kevin on 15/7/29.
  */
 public class FunctionsActivity extends BaseActivity {
 

@@ -1,10 +1,10 @@
-package com.bugtags.demo;
+package iot.bugtags.demo;
 
 import android.os.Bundle;
 import android.view.View;
 
 /**
- * Created by bugtags.com on 15/7/28.
+ * Created by kevin on 15/7/28.
  */
 public class CustomActivity extends BaseActivity {
 

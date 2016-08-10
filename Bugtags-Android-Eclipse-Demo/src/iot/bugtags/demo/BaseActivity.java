@@ -1,8 +1,8 @@
-package com.bugtags.demo;
+package iot.bugtags.demo;
 
 import android.app.Activity;
 import android.view.MotionEvent;
-import com.bugtags.library.Bugtags;
+import io.bugtags.library.Bugtags;
 
 public class BaseActivity extends Activity {
 

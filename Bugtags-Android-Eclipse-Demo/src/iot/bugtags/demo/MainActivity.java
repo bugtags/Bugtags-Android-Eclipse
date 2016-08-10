@@ -1,4 +1,4 @@
-package com.bugtags.demo;
+package iot.bugtags.demo;
 
 import android.content.Intent;
 import android.os.Bundle;
