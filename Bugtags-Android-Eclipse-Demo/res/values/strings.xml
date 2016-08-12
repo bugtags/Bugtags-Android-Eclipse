@@ -2,43 +2,43 @@
 
     <!--global-->
     <string name="app_name">Bugtags-Demo</string>
-    <string name="global_yes">是</string>
-    <string name="global_no">否</string>
-    <string name="global_set">设置</string>
-    <string name="global_back">返回</string>
-    <string name="global_send">提交</string>
+    <string name="global_yes">YES</string>
+    <string name="global_no">NO</string>
+    <string name="global_set">SET</string>
+    <string name="global_back">BACK</string>
+    <string name="global_send">SUBMIT</string>
 
     <!--main-->
-    <string name="main_feedback">发送反馈</string>
-    <string name="main_custom">自定义继承</string>
-    <string name="main_config">快速配置</string>
-    <string name="main_functions">功能介绍</string>
-    <string name="main_born">移动时代首选 Bug 管理系统</string>
+    <string name="main_feedback">Feedback</string>
+    <string name="main_custom">Integration</string>
+    <string name="main_config">APIs</string>
+    <string name="main_functions">Intro</string>
+    <string name="main_born">Mobile Apps Testing , Tracking</string>
 
     <!--config-->
-    <string name="config_user_step">设置是否记录用户操作步骤</string>
-    <string name="config_console_log">设置是否收集控制台日志</string>
-    <string name="config_crash_log">设置是否收集Crash信息</string>
-    <string name="config_feedback">发送意见反馈</string>
-    <string name="config_set_user_data">设置自定义数据</string>
-    <string name="config_btg_log">Bugtags日志工具（不会将日志写入控制台）</string>
+    <string name="config_user_step">Set whether to track the user steps</string>
+    <string name="config_console_log">Set whether to track the console logs</string>
+    <string name="config_crash_log">Set whether to track the crashes </string>
+    <string name="config_feedback">Send feedback</string>
+    <string name="config_set_user_data">Set key value pare </string>
+    <string name="config_btg_log">Add custom logs that will be sent with each report</string>
     <string name="config_user_step_code">Bugtags.setTrackingUserSteps(true|false);</string>
     <string name="config_console_log_code">Bugtags.setTrackingConsoleLog(true|false);</string>
     <string name="config_crash_log_code">Bugtags.setTrackingCrashes(true|false);</string>
     <string name="config_feedback_code">Bugtags.sendFeedback(\"xxx\");</string>
     <string name="config_set_user_data_code">Bugtags.setUserData(\"key\", \"value\");</string>
     <string name="config_btg_log_code">Bugtags.log(\"xxx\");</string>
-    <string name="main_crash">产生一个闪退</string>
+    <string name="main_crash">Create a crash</string>
 
     <!--custom-->
-    <string name="custom_hint">参照BaseActivity，在你的Activity基类的如下3个方法中添加回调，就可以正常使用:Bugtags：\nonResume();\nonPause();\ndispatchTouchEvent();</string>
+    <string name="custom_hint">Add callbacks in your BaseActivity: \nonResume();\nonPause();\ndispatchTouchEvent();</string>
 
     <!--function-->
-    <string name="functions_intro">Bugtags是新一代的、专为移动测试而生的缺陷发现及管理工具。我们致力于改善移动App的测试流程，连接发现缺陷与提交缺陷之间的用户体验，提高测试及解决缺陷的效率。</string>
+    <string name="functions_intro">Bugtags - Mobile Apps Testing , Tracking for iOS , Android, HTML 5</string>
     <string name="functions_slogan">Improve your app anytime, anywhere.</string>
 
     <!--feedback-->
-    <string name="feedback_hint">请输入反馈内容</string>
-    <string name="feedback_text_empty">请输入内容</string>
-    <string name="feedback_send_succeed">反馈已发布</string>
+    <string name="feedback_hint">feedback content</string>
+    <string name="feedback_text_empty">content should not be empty</string>
+    <string name="feedback_send_succeed">feedback sent</string>
 </resources>
