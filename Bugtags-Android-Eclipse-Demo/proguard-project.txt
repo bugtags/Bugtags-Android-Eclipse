@@ -18,11 +18,16 @@
 #-keepclassmembers class fqcn.of.javascript.interface.for.webview {
 #   public *;
 #}
+
+# ProGuard configurations for Bugtags
 -keepattributes LineNumberTable,SourceFile
 
--dontwarn android.support.v4.**
 -keep class com.bugtags.library.** {*;}
--dontwarn org.apache.http.**
--dontwarn android.net.http.AndroidHttpClient
--dontwarn com.bugtags.library.vender.**
 -dontwarn com.bugtags.library.**
+-keep class io.bugtags.** {*;}
+-dontwarn io.bugtags.**
+-dontwarn org.apache.http.**
+-dontwarn android.support.v4.** 
+-dontwarn android.net.http.AndroidHttpClient
+
+# End Bugtags
