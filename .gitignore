@@ -9,8 +9,6 @@ tmp/
 local.properties
 .settings/
 .loadpath
-.DS_Store/
-**/.DS_Store
 
 # Eclipse Core
 #.project
