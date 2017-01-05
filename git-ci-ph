@@ -12,4 +12,7 @@ git add *
 git commit -m "$comment"
 git push origin master
 git push github master
+<<<<<<< HEAD
 git push github --tags
+=======
+>>>>>>> anr-demo

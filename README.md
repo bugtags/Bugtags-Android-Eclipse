@@ -1,62 +1,30 @@
 Bugtags Android SDK for Eclipse
 ===================
-###中文文档请移步[README_CN](README_CN.md)
-###QQ tribe for help: 479166560
+# Bugtags Bug Reporter for Android
 
-> If you are using Android Studio for Android development, please visit: [Bugtags-Android].
+Improve your app quality and reliability through In-App bug reporting and crash reporting.
 
-> For more information, please visit: [Bugtags-Android]
+## Key Features
 
-## Step 1:
-* Clone this project to your disk and add it to your workspace then add it as a dependency in your application's project.
+### Bug Reporting
 
-* Request the following permissions in your AndroidManifest.xml:
+Report bugs directly from within your app, no longer need to switch to a bug reporting application.
 
-```
-<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
-<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
-<uses-permission android:name="android.permission.INTERNET"/>
-<uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
-<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
-<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-<uses-permission android:name="android.permission.READ_LOGS"/>
-<uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
-```
-* add activities and service in AndroidManifest.xml:
+### Crash Reporting
 
-```
-<activity android:name="com.bugtags.library.BugtagsActivity"
-            android:configChanges="keyboardHidden|orientation|screenSize"
-            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"/>
-<service android:name="com.bugtags.library.BugtagsService"/>
-<receiver android:name="com.bugtags.library.BugtagsReceiver">
-            <intent-filter>
-                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
-            </intent-filter>
-</receiver>
-```
+Automatically report and analyze crashes, no longer need to symbolicate stack traces manually.
 
-## Step 2:
-* Add three callbacks in your base Activity class:
+### In-App Feedback
 
-```
-    package your.package.name;
+Allow your customers to send their feedback directly from within your app by just shaking their mobile devices. 
 
-    import android.app.Activity;
-    import android.os.Bundle;
-    import android.view.MotionEvent;
+# Integration
 
-    import com.bugtags.library.Bugtags;
+Please visit [Bugtags Eclipse integration](https://docs.bugtags.io/start/integrate/android/manual.html).
 
-    public class CustomActivity extends Activity{
-        @Override
-        protected void onResume() {
-            super.onResume();
-            //callback 1
-            Bugtags.onResume(this);
-        }
+# Changelogs
 
+<<<<<<< HEAD
         @Override
         protected void onPause() {
             super.onPause();
@@ -101,11 +69,10 @@ Modify AndroidManifest.xml，use MyApplication:
 # Change log
 
 see in [releases](https://github.com/bugtags/Bugtags-Android/releases)
+=======
+Please visit [Bugtags changelogs](https://docs.bugtags.io/changelog/android.html).
+>>>>>>> anr-demo
 
 # License
-This demo is [BSD-licensed](LICENSE).
-
-# Links
-
-[Bugtags-Android](https://github.com/bugtags/Bugtags-Android)
+This demo is licensed under the MIT License.
 
