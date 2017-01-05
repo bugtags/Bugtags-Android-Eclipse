@@ -9,6 +9,8 @@ tmp/
 local.properties
 .settings/
 .loadpath
+.DS_Store/
+**/.DS_Store
 
 # Eclipse Core
 #.project
@@ -53,3 +55,4 @@ gen/
 
 # Local configuration file (sdk path, etc)
 local.properties
+
