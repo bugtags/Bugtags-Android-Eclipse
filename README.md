@@ -24,54 +24,7 @@ Please visit [Bugtags Eclipse integration](https://docs.bugtags.io/start/integra
 
 # Changelogs
 
-<<<<<<< HEAD
-        @Override
-        protected void onPause() {
-            super.onPause();
-            //callback 2
-            Bugtags.onPause(this);
-        }
-
-        @Override
-        public boolean dispatchTouchEvent(MotionEvent event) {
-            //callback 3
-            Bugtags.onDispatchTouchEvent(this, event);
-            return super.dispatchTouchEvent(event);
-        }
-    }
-```
-
-## Step 3:
-* Create subclass of Application，initialize Bugtags in onCreate() method:
-
-```
-public class MyApplication extends Application {
-
-    @Override
-    public void onCreate() {
-        super.onCreate();
-        //initialize here
-        Bugtags.start("YOUR APPKEY", this, Bugtags.BTGInvocationEventBubble);
-    }
-}
-```
-Modify AndroidManifest.xml，use MyApplication:
-
-```
-<application
-    android:name=".MyApplication"
-    android:label="@string/app_name"
-    android:theme="@style/AppTheme" >
-    ....
-</application>
-```
-
-# Change log
-
-see in [releases](https://github.com/bugtags/Bugtags-Android/releases)
-=======
 Please visit [Bugtags changelogs](https://docs.bugtags.io/changelog/android.html).
->>>>>>> anr-demo
 
 # License
 This demo is licensed under the MIT License.
